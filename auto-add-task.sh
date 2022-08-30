@@ -1,0 +1,6 @@
+python3 main.py -a 'document remaining sol @ ML @ 35.6'
+python3 main.py -a 'check arch latest changes @ Edge @ 38.4'
+python3 main.py -a 'finish training @ ML @ 36.6'
+python3 main.py -a 'prepare white paper @ conference @ 39.2'
+python3 main.py -a 'apply vacation leaves @ work @ 40.1'
+python3 main.py -a 'comeup with IDF idea @ Edge @ 43.4'

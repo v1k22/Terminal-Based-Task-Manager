@@ -1,0 +1,26 @@
+inside_string = '├──'
+vir_line = '│' 
+end_line = '└──'
+
+tiger = '🦁'
+running = '⏱️'
+cycle = '🚲'
+
+green_tick_box = '✅'
+green_tick = '✔️'
+red_circle = '🔴'
+blue_circle = '🔵'
+red_cross = '❌'
+question_mark = '❓'
+
+check_box = '☐'
+
+HEADER = '\033[95m'
+OKBLUE = '\033[94m'
+OKCYAN = '\033[96m'
+OKGREEN = '\033[92m'
+WARNING = '\033[93m'
+FAIL = '\033[91m'
+ENDC = '\033[0m'
+BOLD = '\033[1m'
+UNDERLINE = '\033[4m'
