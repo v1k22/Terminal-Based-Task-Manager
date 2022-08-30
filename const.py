@@ -12,6 +12,7 @@ red_circle = '🔴'
 blue_circle = '🔵'
 red_cross = '❌'
 question_mark = '❓'
+bar = '█'
 
 check_box = '☐'
 

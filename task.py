@@ -210,6 +210,21 @@ def add_show_notes(N):
     else:
         print ('No file/notes available')
 
+def complete_status():
+    global data
+    load_data()
+
+    total_tasks = 0
+    completed_tasks = 0
+    for title, list_of_tasks in data.items():
+        if len(list_of_tasks) > 0:
+            total_tasks += len(list_of_tasks)
+            for task in list_of_tasks:
+                if task['status'] == green_tick:
+                    completed_tasks += 1
+    
+    comp_per = (100 * completed_tasks) / total_tasks
+    return int(comp_per)
 
 def display():
 
@@ -243,3 +258,24 @@ def display():
                 print (FAIL + vir_line, '\t', inside_string, '[', rem_time , ']', '  ' , due_date , '\t   ' , status, '\t\t' , task_id, note_status , task_des, ENDC)
             else:
                 print (vir_line, '\t', inside_string, '[', rem_time , ']', '  ' , due_date , '\t   ' , status, '\t\t' , task_id, note_status , task_des)
+
+    comp_per = complete_status()
+    end_str = end_line + ' ['
+    for i in range(50):
+        if i < (comp_per // 2):
+            end_str += bar
+        else:
+            end_str += '-'
+    
+    end_str += '] ' + str(comp_per) + '%' + ENDC
+
+    bar_color = OKGREEN
+    if comp_per <= 25:
+        bar_color = FAIL
+    elif comp_per > 25 and comp_per <= 50:
+        bar_color = OKCYAN
+    else:
+        bar_color = OKGREEN
+
+    print (vir_line)
+    print (bar_color + end_str)
