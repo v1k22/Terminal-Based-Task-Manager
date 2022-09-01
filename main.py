@@ -50,8 +50,7 @@ def run(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Welcome to Task Manager')
     parser.add_argument('-a','--add', help="Add Task, ex. 'Finish this @ development @ 34.5 will take 1st as task, 2nd as title and 3rd as deadline' ", required=False, type=str)
-    parser.add_argument('-t','--title', help='Add Title', required=False)
-    parser.add_argument('-c','--complete', help='Mark Completed', required=False)
+    parser.add_argument('-c','--complete', help='Mark Completed, ex. tm -c <tasknumber>', required=False)
     parser.add_argument('--clear', nargs = '*', help='Delete all tasks', required=False)
     parser.add_argument('-f','--failed', help='Mark failed', required=False)
     parser.add_argument('-u','--unknown', help='Mark unknown or undecided', required=False)
