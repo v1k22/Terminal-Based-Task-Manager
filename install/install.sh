@@ -5,7 +5,7 @@ mkdir -p /etc/bd
 tee -a /root/.bashrc << EOF
 # text inserted by TM - Task Manager program
 display_date(){
-        python3 /root/bd/main.py --summary
+        tm --summary
 }
 PS1='\${debian_chroot:+(\$debian_chroot)}\u@\h:\w\\$ \n [\$(display_date)] 🦁 '
 # END of text insert by TM
