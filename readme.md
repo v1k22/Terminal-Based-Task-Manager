@@ -36,3 +36,7 @@ optional arguments:
   --sn SN               Show note content
 
 ```
+
+
+Todo:
+managing personal servers (under work)
