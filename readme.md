@@ -1,5 +1,7 @@
 # Task Manager
 
+Feel free to contribute.
+
 Download git repo and run install.sh from install folder.
 
 Example:
