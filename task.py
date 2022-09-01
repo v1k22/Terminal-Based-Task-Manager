@@ -15,8 +15,8 @@ def err(msg):
 def load_data():
     global data
 
-    if os.path.isfile('data.pickle'):
-        with open('data.pickle', 'rb') as handle:
+    if os.path.isfile('/etc/bd/data.pickle'):
+        with open('/etc/bd/data.pickle', 'rb') as handle:
             data = pickle.load(handle)
 
 def get_space_n(*arg):
@@ -29,7 +29,7 @@ def get_space_n(*arg):
 def save_data():
     global data
 
-    with open('data.pickle', 'wb') as handle:
+    with open('/etc/bd/data.pickle', 'wb') as handle:
         pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 def delete_data():

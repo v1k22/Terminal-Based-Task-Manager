@@ -2,12 +2,15 @@ from const import *
 from cal import *
 import task
 import sys
+from pathlib import Path
 
 import argparse
 
 N_args = None
 
 def run(args):
+
+    Path("/etc/bd").mkdir(parents=True, exist_ok=True)
 
     task.data = {}
 
